@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Sekcja salon*/
+
+.salon {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+
+.salon .item {
+  height: 25vh;
+}
+
+.salon p {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+strong {
+  color: #d86072;
+}
+
+.salon h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.salon h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.salon img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  border-radius: 7px;
+}
+
+@media (min-width: 533px) {
+  .salon .item {
+    float: left;
+    width: 50%;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .salon h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .salon h2 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .salon p {
+    font-size: 24px;
+    padding: 15px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .salon p {
+    padding: 15px 15px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .salon h1 {
+    font-size: 38px;
+    margin-top: 30px;
+  }
+
+  .salon h2 {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .salon p {
+    font-size: 24px;
+    padding: 15px 15px;
+  }
+}
+
+agm-map {
+  height: 400px;
+  width: 100%;
+  max-width: 1200px;
+}

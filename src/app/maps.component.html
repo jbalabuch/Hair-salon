@@ -1,0 +1,38 @@
+<menu></menu>
+<section class="salon clearfix">
+  <h1>Salon</h1>
+  <br />
+  <img src="./assets/images/salon.jpg" alt="salon" />
+  <p>
+    Nasz salon znajduje się w dogodnej lokalizacji, w ścisłym centrum Wrocławia.
+    Jeżeli chcesz dojechać do nas samochodem, nie martw się, że nie będziesz
+    miała gdzie go zatrzymać. Przed salonem mamy zawsze wolne miejsca
+    parkingowe!
+  </p>
+  <h2>
+    <strong>Salon UCZESANA</strong>
+    <br />ul. Zmyślona 13 <br />50-123 Wrocław
+  </h2>
+  <br /><br />
+
+  <agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    [disableDefaultUI]="true"
+    [zoomControl]="true"
+  >
+    <agm-marker
+      *ngFor="let m of markers; let i = index"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [label]="m.label"
+    >
+      <agm-info-window>
+        <strong>Salon Uczesana</strong>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+  <br /><br />
+</section>
+<contact></contact>
