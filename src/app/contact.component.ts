@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <section class="contact">
       <h1>Skontaktuj się z nami</h1>
       <div class="wrap clearfix">
-        <form action="https://formspree.io/xeqrgpyz" method="POST">
+        <form ngNoForm action="https://formspree.io/xeqrgpyz" method="POST">
           <input type="text" placeholder="Email" name="_replyto" />
           <textarea placeholder="Twoja wiadomość" name="name"></textarea>
           <button type="submit">Wyślij wiadomość</button>
